@@ -59,6 +59,7 @@ public class MerchantStockService {
     }
 
     public void addstock(Integer productid, Integer merchantid , Integer add) {
+        
 
         Optional<MerchantStock> optionalMerchantStock=merchantStockRepositry.findByProductidAndMerchantid(productid,merchantid);
         if(optionalMerchantStock.isPresent()){
